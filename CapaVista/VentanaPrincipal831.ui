@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>333</width>
+    <height>293</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Gestion de Seguros &quot; La Segura&quot;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>333</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuARCHIVO">
+    <property name="title">
+     <string>ARCHIVO</string>
+    </property>
+    <addaction name="actionSALIR"/>
+   </widget>
+   <widget class="QMenu" name="menuCrud_Autos">
+    <property name="title">
+     <string>Crud Autos</string>
+    </property>
+    <addaction name="actionAUTOS"/>
+   </widget>
+   <widget class="QMenu" name="menuCrud_Personas">
+    <property name="title">
+     <string>Crud Personas</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionPERSONAS"/>
+   </widget>
+   <addaction name="menuARCHIVO"/>
+   <addaction name="menuCrud_Autos"/>
+   <addaction name="menuCrud_Personas"/>
+  </widget>
+  <action name="actionSALIR">
+   <property name="text">
+    <string>SALIR</string>
+   </property>
+  </action>
+  <action name="actionSiniestros">
+   <property name="text">
+    <string>Siniestros</string>
+   </property>
+  </action>
+  <action name="actionAUTOS">
+   <property name="text">
+    <string>AUTOS</string>
+   </property>
+  </action>
+  <action name="actionPERSONAS">
+   <property name="text">
+    <string>PERSONAS</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
