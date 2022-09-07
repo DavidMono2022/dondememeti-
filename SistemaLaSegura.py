@@ -11,7 +11,7 @@ class Iniciar:
         app=QtWidgets.QApplication([])
         self.ventana = uic.loadUi(r"C:\\Users\\david\\Desktop\\AX\\cosas de python\\Aseguradora\\LaSegura\\CapaVista\\VentanaPrincipal831.ui")
         self.ventana.show()
-        ###conecta el menu con las funciones
+        ###conecta el menu con las funciones#fgdgbgtbbtdtdtgfbdgbfbdtgdfbdfbdgd
         self.ventana.actionSALIR.triggered.connect(self.accionSalir)
         self.ventana.actionAUTOS.triggered.connect(self.accionCrudAutos)
         self.ventana.actionPERSONAS.triggered.connect(self.AccionCrudPersonas)
@@ -207,7 +207,7 @@ class Iniciar:
         self.ID=self.CrudPersonas.InsertIDPersona.text()  
         if self.verificarID(self.ID):
            BuscarPersona=Persona()
-           PersonaBuscada= BuscarPersona.getUnaPersona(self.ID)
+           PersonaBuscada= BuscarPersona.getUnaPersona(self.ID)git ev
            self.CrudPersonas.InsertNombrePersona.setText(PersonaBuscada[1])
            self.CrudPersonas.InsertApellidoPersona.setText(PersonaBuscada[2])
            self.CrudPersonas.InsertDireccionPersona.setText(PersonaBuscada[3])

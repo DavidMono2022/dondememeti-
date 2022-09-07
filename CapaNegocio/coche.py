@@ -3,7 +3,7 @@ from CapaNegocio.database import *
 
 class coche (Database): #todas las clases inician con MAY
     def __init__(self):
-        super().__init__()
+        super().__init__() # para probar que los cambios se quedan senialados con la M
 
     def getUncoche(self,matricula):
         sql="SELECT * from tp4.coche WHERE COCHE_MATRÍCULA='{}'".format(matricula) # COPIAR EL SELECT DIRECTAMENTE

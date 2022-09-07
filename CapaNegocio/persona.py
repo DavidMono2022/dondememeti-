@@ -34,3 +34,4 @@ class Persona (Database): #todas las clases inician con MAY
         sql="SELECT * FROM tp4.Persona" WHERE ID_CONDUCTOR = '{}'".format (IDCONDUCTOR)
         persona=self.cursor.fetchone()
         return persona != None
+### para probar cambios
